@@ -12,6 +12,37 @@
        public float highestGrade;
        public float lowestGrade;
 
+        public string Description
+        {
+            get
+            {
+                string result;
+                switch (LetterGrade)
+                {
+                    case "A":
+                        result = "EXCELLENT";
+                        break;
+
+                    case "B":
+                        result = "GOOD. Keep it up";
+                        break;
+
+                    case "C":
+                        result = "AVERAGE";
+                        break;
+
+                    case "D":
+                        result = "BELOW AVERAGE";
+                        break;
+
+                    default:
+                        result = "Failing";
+                        break;
+                }
+                return result;
+            }
+        }
+
         public string LetterGrade
         {
             get

@@ -17,7 +17,7 @@ namespace Grade
            WriteResult("Average :", statistics.averageGrade);
            WriteResult("Highest :", (int)statistics.highestGrade);
            WriteResult("Lowest  :", (int)statistics.lowestGrade);
-           WriteResult("Grade", statistics.LetterGrade);
+           WriteResult(statistics.Description, statistics.LetterGrade);
             Console.WriteLine(book.Name);
             Console.ReadKey();  
         }
