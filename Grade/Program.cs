@@ -8,13 +8,10 @@ namespace Grade
         static void Main(string[] args)
         {
             GradeBook book = new GradeBook();
-
+            //Methods will go here
             AddGrades(book);
-
             SaveGrades(book);
-
             GetBookName(book);
-
             WriteResults(book);
             Console.ReadKey();
         }
